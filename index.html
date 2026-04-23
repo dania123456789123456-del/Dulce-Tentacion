@@ -968,7 +968,7 @@ footer {
           </div>
           <div class="field">
             <label>Teléfono *</label>
-            <input name="telefono" required type="tel" placeholder="300 123 4567" />
+            <input name="telefono" required type="tel" placeholder="Ingrese su numero" />
           </div>
           <div class="field">
             <label>Tamaño *</label>
@@ -995,7 +995,7 @@ footer {
         </div>
         <div class="field" style="margin-bottom:1.5rem;">
           <label>Notas adicionales</label>
-          <textarea name="notas" rows="3" placeholder="Mensaje en la torta, alergias, etc."></textarea>
+          <textarea name="notas" rows="3" placeholder="Mensaje en la torta, etc."></textarea>
         </div>
         <button type="submit" class="btn-submit">
           💬 Enviar pedido por WhatsApp
@@ -1221,7 +1221,7 @@ document.getElementById('orderForm').addEventListener('submit', e => {
   e.preventDefault();
   const f = new FormData(e.target);
   const msg =
-    `¡Hola Dulce Tentación! 🍰 Quiero hacer un pedido:%0A%0A` +
+    `¡Hola Dulce Tentación! Quiero hacer un pedido:%0A%0A` +
     `*Nombre:* ${f.get('nombre')}%0A` +
     `*Teléfono:* ${f.get('telefono')}%0A` +
     `*Producto:* Tres Leches Artesanal%0A` +
